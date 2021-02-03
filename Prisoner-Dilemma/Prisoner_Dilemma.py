@@ -1,13 +1,23 @@
-valA = input("Ομολόγησε o A; (YES/NO): ")
-valB = input("Ομολόγησε o B; (YES/NO): ")
+print("Δώσε τιμή YES η NO")
 
-if valA == "YES" and valB == "YES":
+A = "";
+B = "";
+
+while A != "YES" and A != "NO":
+    A = input("Ομολόγησε o A; (YES/NO): ")
+
+while B != "YES" and B != "NO":
+    B = input("Ομολόγησε o B; (YES/NO): ")
+
+
+
+if A == "YES" and B == "YES":
     poiniA = "5"
     poiniB = "5"
-elif valA == "NO" and valB == "NO":
+elif A == "NO" and B == "NO":
     poiniA = "1"
     poiniB = "1"
-elif valA == "YES" and valB == "NO":
+elif A == "YES" and B == "NO":
     poiniA = "0"
     poiniB = "20"
 else:
